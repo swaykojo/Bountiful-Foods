@@ -2,7 +2,7 @@ body{
     font-family: 'Lato', sans-serif;
     font-size: medium;
 }
-main .s-first, .s-second, .s-third{
+.s-second{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,4 +11,14 @@ main .s-first, .s-second, .s-third{
 .img-type{
     border: 1px solid #ffffff;
     border-radius: 20px;
+}
+.hero-img{
+    width:100%;
+    height: 50%;
+    object-fit: cover;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
