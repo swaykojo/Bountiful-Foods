@@ -13,11 +13,7 @@ header{
 main{
     background-color: #fefae0;
 }
-nav{
-    background-color: #ffe0b5;
-    padding: 0;
-    margin: 0 ;
-}
+
 .s-second{
     display: flex;
     flex-direction: column;
@@ -51,6 +47,11 @@ nav{
 .types > img {
     opacity: 0;
     transition: opacity 5000ms ease-in-out;
+}
+.orderInfo{
+  text-align: center;
+  color: #d11149;
+  font-size: 1.5rem;
 }
 
 /* weather */
@@ -157,14 +158,14 @@ nav{
     border-radius: 4px;
     font-size: 1rem;
     color: #fff;
-    background: #5372F0;
+    background: #d11149;
     transition: 0.2s ease;
   }
   .weather-input .search-btn:hover {
     background: #2c52ed;
   }
   .weather-input .location-btn {
-    background: #6C757D;
+    background: #ffe0b5;
   }
   .weather-input .location-btn:hover {
     background: #5c636a;
@@ -176,10 +177,10 @@ nav{
   }
 
   /*NAVIGATION*/
-  nav {
-	max-width: 100%;
-	margin: 10px auto;
-  
+  nav{
+    background-color: #ffe0b5;
+    padding: 0;
+    margin: 0 ;
 }
 
 /* small view navigation */
@@ -214,6 +215,12 @@ nav{
 	color: #333;
 	font-weight: 700;
 }
+ul{
+  margin: 0;
+}
+p{
+  margin: 0;
+}
 
 /* when the button is clicked - the responsive class is added and accounted for here */
 .navigation.responsive li {
@@ -227,7 +234,7 @@ nav{
 .demo{
     font-size: 2rem;
     text-align: center;
-    border: 1px solid gray;
+
 }
 
 /* Social media ions */
@@ -262,6 +269,8 @@ nav{
 footer{
     background-color: #d11149;
     display: block;
+    margin: 0;
+    padding: 0;
 }
 .f-header, .f-page{
     color: white;
@@ -282,4 +291,47 @@ footer{
     display:flex;
     justify-content: center;
 
+}
+/* form */
+
+form fieldset {
+  padding: 1rem;
+  border: 1px solid #fefae0;
+
+}
+#place-order {
+  font-size: 1rem;
+  margin: 10px 50px;
+  background-color:  #ffe0b5;
+  color: #d11149;
+  border: 1px solid #d11149;
+}
+label{
+  color: #d11149;
+  font-size: 1.5rem;
+}
+#O-name, #o-email, #o-phone, #o-top1, #o-top2, #o-top3{
+  font-size: 1.5rem;
+  color: #d11149;
+}
+#totalCarbs, #totalProtein, #totalFat, #totalSugar, #totalCalories {
+  font-size: 1.5rem;
+  color: #d11149;
+}
+.paraSpan{
+  font-size: 1.5rem;
+  color: #d11149;
+}
+form label.data-input input, form label.data-input select{
+  display: block;
+  font-size: 1.5em;
+}
+.formOrder{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+h2{
+  margin: 0;
 }

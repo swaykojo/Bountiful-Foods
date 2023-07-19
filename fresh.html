@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +10,12 @@
     <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Carlito&family=Dancing+Script&family=Happy+Monkey&family=Instrument+Serif&family=Lato:ital,wght@0,400;1,300;1,700&family=Orbitron:wght@400;900&family=Playfair+Display:wght@600&family=Smokum&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carlito&family=Dancing+Script&family=Happy+Monkey&family=Instrument+Serif&family=Lato:ital,wght@0,400;1,300;1,700&family=Orbitron:wght@400;900&family=Playfair+Display:wght@600&family=Smokum&display=swap"
+        rel="stylesheet">
     <title>Bountiful Foods</title>
 </head>
+
 <body>
     <header>
         <img src="images/logo.png" alt="bountiful-logo">
@@ -25,67 +29,82 @@
             <li><a href="../Bountiful-Foods/about.html">About</a></li>
         </ul>
     </nav>
-   <main>
-    <section>
-        <h2 class="ab-header">About Us</h2>
-        <p class="ab-para">We’re proud to call Carlsbad, California home — a vibrant, innovative, creative place where fresh ideas thrive.
-            What really sets Bountifulfood™ apart is our commitment to 100% real fruit products, boosted with highly functional superfoods for the essential nutrition nature intended.
-            Over the years, many fruit juices have been complicated and compromised by added ingredients, artificial flavors, colors, synthetic preservatives, added sugars, and GMOs.</p>
-            <p class="ab-para">Carlsbad is a city near San Diego, in California. It's known for Tamarack Surf Beach, backed by the Carlsbad Sea Wall, and secluded South Carlsbad State Beach. 
-                The Legoland California theme park includes rides, a water park and the SEA LIFE Aquarium. The Flower Fields is a seasonal attraction, with acres of flowers. 
-                Set in a canyon, the Leo Carrillo Ranch Historic Park is home to free-roaming peacocks. </p>
-    </section>
-    <section>
-        <section>
-            <h3 class="ab-header">Core Values</h3>
-            <p class="ab-para">Versatility = Profitability. Creating smoothies, refreshing juices, cocktails, ice cream or flavoring all with one product is smart business.</p>
-            <p class="ab-para">We believe all-natural, 100% fruit juice should be accessible to all, and therefore affordable for business owners.</p>
-            <p class="ab-para">Shelf-stable means you save on costly refrigerated transportation and fridge space.</p>
-            <p class="ab-para">Safety: We produce according to strict GMP standards in an SQF certified facility.</p>
-        </section>
-        <section>
-            <h3 class="ab-header">Quality</h3>
-            <p class="ab-para">Freshest fruits and vegetables make the best products.</p>
-            <p class="ab-para">Strawberry should taste like Strawberry. Mango should taste like Mango. We keep it simple.</p>
-            <p class="ab-para">GMO = Get Me Out your ingredients statement.</p>
-            <p class="ab-para">Fruits are naturally good for you. That’s why our products are crafted to boost fruits’ natural benefits — enhanced with vitamins, minerals, electrolytes, oat fiber, antioxidants or omega oils. Only good stuff!</p>
-            <p class="ab-para">Don’t have separation anxiety. Only additives can prevent the natural settling process and who wants to drink additives? Stop staring and give your Smartfruit a little shake-shake.</p>
-        </section>
-    </section>
-    <section class="map">
-        <div class="img-map">
-            <img src="images/google-map.png" alt="google-map" >
+    <main class="high">
+        <h2>Place Order</h2>
+        <div class="formOrder">
+            <div>
+            <form name="drinkOrder" onsubmit="return false">
+                <fieldset>
+                    <label class="data-input" >First Name 
+                        <input type="text" name="fname" id="first" required>
+                    </label>
+                    <label class="data-input">Email 
+                        <input type="email" name="email" id="email" placeholder="someone@gmail.com">
+                    </label>
+                    <label class="data-input">Phone Number 
+                        <input type="tel" name="Phone" id="phone" placeholder="13267894" required>
+                    </label>
+                    <label class="data-input">Select Your Friuts
+                        <select name="friut1" id="top1" required>
+                            <option value="">Required Friut</option>
+                        </select>
+                    </label>
+                    <label class="data-input"><select name="friut2" id="top2">
+                        <option value=""></option>
+                    </select></label>
+                    <label class="data-input"><select name="friut3" id="top3">
+                        <option value=""></option>
+                    </select></label>
+                </fieldset>
+                <input type="submit" id="place-order" value="submit">
+            </form>
+           </div>
+            <div>
+                <p><span id="O-name"></span></p>
+                <p><span id="o-email"></span></p>
+                <p><span id="o-phone"></span></p>
+                <p><span id="o-top1"></span></p>
+                <p><span id="o-top2"></span></p>
+                <p><span id="o-top3"></span></p>
+                 <p class="paraSpan">Nutritional Fact</p>
+                <p class="paraSpan">Carbohydrates:<span id="totalCarbs"></span></p>
+                <p class="paraSpan">Protein:<span id="totalProtein"></span></p>
+                <p class="paraSpan">Fat:<span id="totalFat"></span></p>
+                <p class="paraSpan">Sugar:<span id="totalSugar"></span></p>
+                <p class="paraSpan">Calories:<span id="totalCalories"></span></p>
+                </div>
         </div>
-        <p class="ab-para"><a href="https://www.google.com/maps/d/viewer?msa=0&mid=1oYpFFQzcgSvUVdvd1dPcE9qIaWQ&ll=33.163303000000006%2C-117.34590400000002&z=17">Google Location</a></p>
-    </section>
-   </main>
-   <footer>
-    <section class="foot">
-    <section class="f-img">
-        <img src="images/logo.png" alt="Logo Image">
-    </section>
-    <section class="f-address">
-        <h2 class="f-header">Bountiful Foods</h2>
-        <p class="f-page">1808 Aston Ave, Carlsbad, CA 92008, United States</p>
-        <p class="f-page">bountifulfoods@gmail.com</p>
-        <p class="f-page">+1 760-931-8400</p>
-    </section>
-    <section class="f-media">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </main>
+    <footer>
+        <section class="foot">
+            <section class="f-img">
+                <img src="images/logo.png" alt="Logo Image">
+            </section>
+            <section class="f-address">
+                <h2 class="f-header">Bountiful Foods</h2>
+                <p class="f-page">1808 Aston Ave, Carlsbad, CA 92008, United States</p>
+                <p class="f-page">bountifulfoods@gmail.com</p>
+                <p class="f-page">+1 760-931-8400</p>
+            </section>
+            <section class="f-media">
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- Add font awesome icons -->
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
-    </section>
-   </section>
-    <section>
-        <p class="f-page"><span id="todayyear"></span> Bountiful-Foods | © Copyright 2023. | Website designed by Godsway Awuah | Last Modification: <span id="currentdate"></span></p>
-    </section>
-</footer>
-<script src="scripts/lazy.js"></script>
-<script src="scripts/weather.js"></script>
-<script src="scripts/navigation.js"></script>
-<script src="scripts/date.js"></script>
+                <!-- Add font awesome icons -->
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </section>
+        </section>
+        <section>
+            <p class="f-page">© <span id="todayyear"></span> | Bountiful-FoodsWebsite designed by Godsway Awuah | Last Modification: <span id="currentdate"></span></p>
+        </section>
+    </footer>
+    <script src="scripts/lazy.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/fresh.js"></script>
 </body>
+
 </html>
