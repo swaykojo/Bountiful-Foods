@@ -1,4 +1,4 @@
-const freshFriutsData = fetch("../JSON/data.json").then((data) => 
+const freshFriutsData = fetch("JSON/data.json").then((data) => 
   data.json ());
 
 const orderButton = document.getElementById("place-order");
