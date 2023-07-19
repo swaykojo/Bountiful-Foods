@@ -15,52 +15,126 @@
 <body>
     <header>
         <img src="images/logo.png" alt="bountiful-logo">
+        <h1>Bountiful Foods</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="">Home</a></li>
+        <button id="hamButton">&#9776;</button>
+        <ul class="navigation">
+            <li><a href="../Bountiful-Foods/index.html">Home</a></li>
             <li><a href="">Fresh</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="../Bountiful-Foods/about.html">About</a></li>
         </ul>
     </nav>
     <main>
         <section class="s-first">
             <div class="hero">
-                <img src="images/pexels-polina-tankilevitch-4443492.jpg" alt="mix fruits image" class="hero-img"
+                <img src="images/pexels-polina-tankilevitch-4443492.jpg" alt="mix fruits image" loading="lazy" class="hero-img"
                  srcset="images/pexels-polina-tankilevitch-4443492px400.jpg 400w, images/pexels-polina-tankilevitch-4443492px400.jpg 700w, images/pexels-polina-tankilevitch-4443492.jpg, 900w">
             </div>
-           <div>
+           <div class="demo">
             <p>The California South Coast region extends from Ventura County to the Mexican Border and includes the counties of Los Angeles, Orange and San Diego. It is known for its sandy beaches, surf-able waves, moderate climate, and large and diverse population.</p>
            </div>
         </section>
         <section class="s-second">
             <div class="types">
-               <img src="images/green-lime.jpg" alt="green-lime-drink" class="img-type"
+               <img src="images/green-lime.jpg" alt="green-lime-drink" loading="lazy" class="img-type"
                   srcset="images/green-lime400px.jpg 400w, images/green-lime700px.jpg 700w, images/green-lime.jpg 900w">
                <p>Passion Fruit Drink</p>
             </div>
             <div class="types">
-               <img src="images/Simply-red.jpg" alt="Simply-red-drink" class="img-type"
+               <img src="images/Simply-red.jpg" alt="Simply-red-drink" loading="lazy" class="img-type"
                  srcset="images/Simply-red400px.jpg 400w, images/Simply-red700px.jpg 700w, images/Simply-red.jpg 900w">
                <p>Mixed berry Lemonade</p>
             </div>
             <div class="types">
-                <img src="images/strawberry-mix-juice.jpg" alt="strawberry-mix-juice-drink" class="img-type"
+                <img src="images/strawberry-mix-juice.jpg" alt="strawberry-mix-juice-drink" loading="lazy" class="img-type"
                  srcset="images/strawberry-mix-juice400px.jpg 400w, images/strawberry-mix-juice700px.jpg 700w, images/strawberry-mix-juice.jpg 900w,">
                 <p>Rainbow Fruit Sparkling water</p>
             </div>
         </section>
-        <section class="s-third">
-            <div class="weather">
-
+        <section class="weather-data">
+            <div class="input-data">
+               <div class="weather-input">
+                  <h3>Enter a City Name</h3>
+                  <input class="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
+                  <button class="search-btn">Search</button>
+                  <div class="separator"></div>
+                  <button class="location-btn">Use Current Location</button>
+                </div>
+            <div class="current-weather">
+                <div class="details">
+                  <h2>_______ ( ______ )</h2>
+                  <h6>Temperature: __°C</h6>
+                  <h6>Wind: __ M/S</h6>
+                  <h6>Humidity: __%</h6>
+                </div>
+              </div>
             </div>
-            <div class="Customer">
-
+              <div class="days-forecast">
+                <h2>5-Day Forecast</h2>
+                <ul class="weather-cards">
+                  <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                  </li>
+                  <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                  </li>
+                  <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                  </li>
+                  <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                  </li>
+                  <li class="card">
+                    <h3>( ______ )</h3>
+                    <h6>Temp: __C</h6>
+                    <h6>Wind: __ M/S</h6>
+                    <h6>Humidity: __%</h6>
+                  </li>
+                </ul>
+              </div>
             </div>
         </section>
     </main>
     <footer>
+        <section class="foot">
+        <section class="f-img">
+            <img src="images/logo.png" alt="Logo Image">
+        </section>
+        <section class="f-address">
+            <h2 class="f-header">Bountiful Foods</h2>
+            <p class="f-page">1808 Aston Ave, Carlsbad, CA 92008, United States</p>
+            <p class="f-page">bountifulfoods@gmail.com</p>
+            <p class="f-page">+1 760-931-8400</p>
+        </section>
+        <section class="f-media">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+            <!-- Add font awesome icons -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </section>
+       </section>
+        <section>
+            <p class="f-page"><span id="todayyear"></span> Bountiful-Foods | © Copyright 2023. | Website designed by Godsway Awuah | Last Modification: <span id="currentdate"></span></p>
+        </section>
     </footer>
+    <script src="scripts/lazy.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
 </body>
 </html>

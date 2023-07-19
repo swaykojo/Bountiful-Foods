@@ -5,4 +5,16 @@
         height: 50%;
         object-fit: cover;
     }
+    .weather-input {
+        width: 700px;
+        text-align: center;
+      }
+      header{
+        display: flex;
+        justify-content: center;       
+    }
+    header h1{
+        margin: auto 0;
+        text-align: center;
+    }
 }
