@@ -1,8 +1,10 @@
 body{
     font-family: 'Lato', sans-serif;
-    width: 100%;
-   
+    margin: 0;
+    padding: 0;
+    background-color: #ffe0b5;
 }
+   
 header{
     background-color: #d11149;
     color: white;
@@ -14,6 +16,8 @@ main{
 }
 nav{
     background-color: #ffe0b5;
+    padding: 20px;
+    margin: 0 auto;
 }
 .s-second{
     display: flex;
@@ -59,7 +63,7 @@ nav{
   }
   .weather-data .current-weather {
     color: #fff;
-    background: #5372F0;
+    background: #d11149;
     border-radius: 5px;
     padding: 20px 70px 20px 20px;
     display: flex;
@@ -95,11 +99,11 @@ nav{
     gap: 20px;
   }
   .weather-cards .card {
-    color: #fff;
+    color: #d11149;
     padding: 18px 16px;
     list-style: none;
     width: calc(100% / 5);
-    background: #6C757D;
+    background: #ffe0b5;
     border-radius: 5px;
   }
   .weather-cards .card h3 {
@@ -194,8 +198,7 @@ nav{
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-    background-color: #fefae0; 
-}
+   }
 .navigation li {
 	display: none;
 }
